@@ -72,7 +72,7 @@ public class promoAdapter extends ArrayAdapter {
             public void onResponse(Response<String> response, Retrofit retrofit) {
                 String picture=response.body();
                 System.out.println(PromoList.get(position).getPrix_promo());
-                System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+                System.out.println("tttttttttttttttttttttttttttttt");
                 Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
        
             }

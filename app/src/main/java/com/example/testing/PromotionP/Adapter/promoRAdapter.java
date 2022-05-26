@@ -28,11 +28,11 @@ import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
 
 
 public class promoRAdapter extends ArrayAdapter {
-    List<Promotion> PromoList= new ArrayList<>();
+    List<Promotion> PromoListt= new ArrayList<>();
     Context context;
     public promoRAdapter(@NonNull Context context, int resource, @NonNull List objects) {
         super(context, resource, objects);
-        PromoList= objects;
+        PromoListt= objects;
         context=context;
     }
     @Override
@@ -46,10 +46,10 @@ public class promoRAdapter extends ArrayAdapter {
 
         View v = convertView;
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        v = inflater.inflate(R.layout.promogriditem, null);
-        TextView textView = (TextView) v.findViewById(R.id.titrePromoItem);
-        ImageView imageView = (ImageView) v.findViewById(R.id.imagePromoItem);
-        textView.setText(String.valueOf(PromoList.get(position).getPrix_promo()) + "  DT");
+        v = inflater.inflate(R.layout.promogriditemrest, null);
+        TextView textView = (TextView) v.findViewById(R.id.titrePromoItemR);
+        ImageView imageViewR = (ImageView) v.findViewById(R.id.imagePromoItemR);
+        textView.setText(String.valueOf(PromoListt.get(position).getPrix_promo()) + "  DT");
 
         v.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,14 +67,14 @@ public class promoRAdapter extends ArrayAdapter {
             }
         });
         APIPromo api= ApiClient.getClient().create(APIPromo.class);
-        Call<String> pic = api.getPicture(PromoList.get(position).getId_promo());
+        Call<String> pic = api.getPicture(PromoListt.get(position).getId_promo());
         pic.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Response<String> response, Retrofit retrofit) {
                 String picture=response.body();
-                System.out.println(PromoList.get(position).getPrix_promo());
+                System.out.println(PromoListt.get(position).getPhoto_promo());
                 System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
-                Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
+                Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageViewR);
 
             }
 

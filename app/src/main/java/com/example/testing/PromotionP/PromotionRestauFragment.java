@@ -97,7 +97,7 @@ public class PromotionRestauFragment extends Fragment {
 
             }
         });
-        simpleList=(GridView) v.findViewById(R.id.gridViewListPromoClient);
+        simpleList=(GridView) v.findViewById(R.id.gridViewListPromoR);
         addPromo=v.findViewById(R.id.promo);
         addPromo.setOnClickListener(new View.OnClickListener() {
             @Override

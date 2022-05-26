@@ -89,7 +89,7 @@ public class PromotionFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_promotion, container, false);
 
-
+        simpleList=(GridView) v.findViewById(R.id.gridViewListPromoClient);
 
 
 
