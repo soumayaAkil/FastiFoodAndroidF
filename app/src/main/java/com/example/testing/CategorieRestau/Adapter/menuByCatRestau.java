@@ -55,12 +55,13 @@ public class menuByCatRestau extends ArrayAdapter {
         TextView textView = (TextView) v.findViewById(R.id.titreMenuItemR);
         ImageView imageView = (ImageView) v.findViewById(R.id.imageProdR);
         textView.setText(MenuByCatList.get(position).getNomProd());
-        annuler= (ImageView)v.findViewById(R.id.supp);
+        annuler= (ImageView) v.findViewById(R.id.supp);
+
         annuler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Dialog dialog = new Dialog(v.getContext());
-                dialog.setContentView(R.layout.alert_annuler);
+                dialog.setContentView(R.layout.alert_supprimer);
                 Button dialogButton = (Button) dialog.findViewById(R.id.cancel2);
                 Button dialogButtonA = (Button) dialog.findViewById(R.id.confirm2);
 
@@ -68,8 +69,10 @@ public class menuByCatRestau extends ArrayAdapter {
                 dialogButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        dialog.dismiss();
+                      /*  dialog.dismiss();
                         Toast.makeText(getContext(),"Cancel..!!",Toast.LENGTH_LONG).show();
+
+                       */
                     }
                 });
                 // if button is clicked, close the custom dialog
@@ -78,17 +81,15 @@ public class menuByCatRestau extends ArrayAdapter {
                 dialogButtonA.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+/*
                         Toast.makeText(getContext(),"Commande annulé ", Toast.LENGTH_LONG).show();
                         dialog.dismiss();
                         Intent intent =new Intent(getContext(), ListCategorieCRestauActivity.class);
 
                         getContext().startActivity(intent);
+                        */
 
 
-
-
-                        // startAcctivity(new Intent(PlantsActivity.this, PayementActivity.class));
                     }
                 });
                 dialog.show();

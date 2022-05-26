@@ -71,6 +71,8 @@ public class promoAdapter extends ArrayAdapter {
             @Override
             public void onResponse(Response<String> response, Retrofit retrofit) {
                 String picture=response.body();
+                System.out.println(picture);
+                System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
                 Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
        
             }
