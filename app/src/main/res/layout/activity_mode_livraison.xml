@@ -14,16 +14,21 @@
         android:textColor="#FF9800"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        tools:ignore="MissingConstraints" />
 
     <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="178dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="178dp">
 
     </RadioGroup>
 
@@ -32,8 +37,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="À domicile"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191"
         tools:ignore="MissingConstraints" />
 
     <RadioButton
@@ -41,8 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sur place"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
         tools:ignore="MissingConstraints" />
 
     <RadioButton
@@ -50,19 +63,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="À emporter"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnML"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Continuer"
         android:backgroundTint="@color/orange"
+        android:text="Continuer"
 
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="355dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

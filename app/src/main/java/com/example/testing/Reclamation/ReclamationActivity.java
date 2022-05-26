@@ -41,7 +41,7 @@ public class ReclamationActivity extends AppCompatActivity {
         reclamationRecyclerView = findViewById(R.id.RcvReclamtions);
         ApiRec api = ApiClient.getClient().create(ApiRec.class);
         Call<List<Reclamations>> listRec = api.GetRecalamtions();
-        System.out.println("Reclamationsssssssssssss" + listRec);
+        System.out.println("Reclamations" + listRec);
         listRec.enqueue(new Callback<List<Reclamations>>() {
             @Override
             public void onResponse(Response<List<Reclamations>> response, Retrofit retrofit) {

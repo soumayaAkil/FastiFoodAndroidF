@@ -12,8 +12,12 @@
         android:layout_height="48dp"
         android:text="Votre Region"
         android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -22,18 +26,26 @@
         android:layout_height="wrap_content"
         android:text=" Nom et prenom: "
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
         tools:ignore="MissingConstraints" />
 
     <EditText
+        android:id="@+id/editTextNP"
         android:layout_width="354dp"
         android:layout_height="48dp"
         android:text="Aridhi Intidhar"
         android:textColor="@color/gray"
-        android:id="@+id/editTextNP"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -42,8 +54,12 @@
         android:layout_height="48dp"
         android:text="Date et Heure"
         android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="491dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -52,8 +68,12 @@
         android:layout_height="48dp"
         android:text="20505856"
         android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -62,8 +82,12 @@
         android:layout_height="48dp"
         android:text="Votre adresse"
         android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -72,8 +96,12 @@
         android:layout_height="wrap_content"
         android:text="Adresse:"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -82,8 +110,11 @@
         android:layout_height="wrap_content"
         android:text="Region:"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -92,28 +123,40 @@
         android:layout_height="wrap_content"
         android:text="Date et heure:"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtvNT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
         android:text="Numero de  Telephone:"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="131dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Envoyer"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="590dp"
-        android:textColor="@color/white"
         android:backgroundTint="@color/orange"
+        android:text="Envoyer"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
