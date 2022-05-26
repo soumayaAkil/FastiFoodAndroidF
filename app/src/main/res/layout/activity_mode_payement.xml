@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".G_Panier.ModePayement">
+
     <TextView
         android:id="@+id/txtvML"
         android:layout_width="wrap_content"
@@ -13,36 +14,49 @@
         android:textColor="#FF9800"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        tools:ignore="MissingConstraints" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="178dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="178dp">
 
     </RadioGroup>
+
 
     <RadioButton
         android:id="@+id/RBAdomicilep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="À domicile"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
         tools:ignore="MissingConstraints" />
-
 
     <RadioButton
         android:id="@+id/RBParCarte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Par carte"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -53,8 +67,12 @@
         android:text="Continuer"
 
         android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="286dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

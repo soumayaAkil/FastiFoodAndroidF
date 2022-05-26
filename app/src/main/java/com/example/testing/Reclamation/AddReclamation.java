@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.testing.Api.API_Reclamation.ApiRec;
 import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Commande.CommandeFragment;
 import com.example.testing.Models.Reclamations;
 import com.example.testing.R;
 
@@ -105,6 +106,12 @@ public class AddReclamation extends AppCompatActivity {
                     @Override
                     public void onResponse(Response<String> response, Retrofit retrofit) {
                         Toast.makeText(getApplicationContext(),"Reclamation ajouté ", Toast.LENGTH_LONG).show();
+                        Intent intentt= new Intent(getApplicationContext(), CommandeFragment.class);
+
+                        startActivity(intentt);
+
+
+
                     }
 
                     @Override
