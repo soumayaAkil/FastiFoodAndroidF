@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FastiFood</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nos_boissons">Nos Boissons</string>
+    <string name="menu">Menu</string>
+    <string name="nos_repas">Nos repas</string>
+    <string name="nos_desserts">Nos desserts</string>
+    <string name="tv_submit_cat">Choisir Catégorie</string>
+    <string name="tv_submit_unite">Ajouter au panier</string>
+    <string name="edt_nomprod">Entrer le nom de produit</string>
+    <string name="tv_ajoutProd">Ajouter Produit</string>
+    <string name="tv_catt">Vous douvez ajouter :</string>
+
+    <string name="edt_prixProd">Entrer le prix de produit</string>
+    <string name="tv_chImage">Choisir Image</string>
+    <string name="tv_comacc">Commandes Acceptés</string>
+    <string name="tv_comref">Commandes Refusés</string>
+    <string name="tv_cat">Nos Catégories</string>
+    <string name="tv_menu">Menu</string>
+    <string name="Avant"><![CDATA[<-]]></string>
+    <string name="Apres"><![CDATA[->]]></string>
+    <string name="voir_cat_gorie"><u>Voir Catégorie</u></string>
+    <string name="edt_nom">Entrer votre nom et prenom</string>
+    <string name="edt_num">Entrer votre num de telephone</string>
+    <string name="edt_adresse">Entrer votre adresse</string>
+    <string name="edt_region">Entrer votre region</string>
+    <string name="tv_comm">Commander</string>
+    <string name="rd_dom">A domicile</string>
+    <string name="rd_place">Sur Place</string>
+    <string name="rb_emp">A emporter</string>
+    <string-array name="array_status">
+        <item>en attent</item>
+        <item>accepté</item>
+        <item>refusé</item>
+
+    </string-array>
+    <string name="title_activity_add_promotion">addPromotion</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_upload_image_promo">UploadImagePromoActivity</string>
+    >>>>>>> Stashed changes
+</resources>

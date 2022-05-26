@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testing">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.type.watch"
+        android:required="false"
+        tools:ignore="InvalidWearFeatureAttribute" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2.params"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fastifoodremove"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/fastifoodremove"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Testing"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CategorieRestau.listMenuRestauByCat"></activity>
+        <activity android:name=".CategorieRestau.ListCategorieCRestauActivity" />
+        <activity
+            android:name=".Calendrier.Commandesj"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Calendrier.CalendarActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Reclamation.AjouterAREcActivity"
+            tools:ignore="Instantiatable" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false"
+            tools:ignore="WrongManifestParent" />
+
+        <activity
+            android:name=".Reclamation.AddReclamation"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Reclamation.ReclamationActivity"
+            tools:ignore="Instantiatable" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".PromotionP.UploadImagePromoActivity"
+            android:label="@string/title_activity_upload_image_promo"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".PromotionP.addPromotion"
+            android:label="@string/title_activity_add_promotion" />
+        <activity
+            android:name=".Commande.DetailFactR"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Commande.AcceptRefuseActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Panier.ModePayement"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Panier.ModeLivraison"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Panier.FUcommande"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Commande.DetailCommande"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Commande.DetailFacteur"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Splash.RestauClientActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClientMenu.MenuClientActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Panier.PanierActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.ListMenuByIdCatActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.ListCategorieClientActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.UploadImageActivity"
+            tools:ignore="Instantiatable" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="MissingClass">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".G_Produit.AjouterProduitActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.CategorieActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.DetailProdActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".G_Produit.MenuActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Profile.MainActivity"
+            tools:ignore="Instantiatable" />
+    </application>
+
+</manifest>

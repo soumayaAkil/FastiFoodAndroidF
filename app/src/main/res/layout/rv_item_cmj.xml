@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/HR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="11dp"
+        android:textSize="20dp"
+        android:text="HEURE"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rl_card_comR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_card_comR"
+        style="@style/card_style"
+
+        android:layout_width="380dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HR">
+
+        <ImageView
+            android:id="@+id/imageProd"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/baguette" />
+        <TextView
+            android:id="@+id/prixProd"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomProd"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageProd"
+            android:text="40dt"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/quantite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageProd"
+            android:text="2"
+            android:textColor="@color/black"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nomProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/imageProd"
+            android:text="makloub"
+            android:textColor="@color/black"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/unite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_toRightOf="@+id/imageProd"
+            android:text="maxi"
+            android:textColor="@color/black"
+
+            android:textSize="18sp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

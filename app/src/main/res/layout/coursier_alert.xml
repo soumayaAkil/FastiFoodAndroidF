@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_500">
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:text="Ayechi" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:contentDescription="my_pic"
+        android:strokeColor="@color/teal_200"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgC"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/textViewTitre"
+        android:src="@drawable/background1"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/coursierbg"/>
+    <TextView
+        android:id="@+id/num"
+        android:layout_below="@id/textViewTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29456789"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/cancel2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:background="@drawable/rectange_gradient"
+        android:layout_marginTop="240dp"
+        android:text="Cancel"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".G_Produit.ListMenuByIdCatActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_menu"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <GridView
+        android:id="@+id/gridViewListMenuClient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shopp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shopping_cart"
+        app:rippleColor="@color/teal_200"
+        android:outlineAmbientShadowColor="@color/teal_200"
+        android:outlineSpotShadowColor="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/cartcount"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/badge_shape"
+        android:gravity="center"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/shopp_button"
+        app:layout_constraintEnd_toEndOf="@id/shopp_button"
+        app:layout_constraintHorizontal_bias="0.91"
+
+        app:layout_constraintStart_toStartOf="@+id/shopp_button"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

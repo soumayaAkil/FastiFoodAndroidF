@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:clickable="true"
+    tools:context=".ClientMenu.AcceuilClientFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/menu"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_voir_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voir_cat_gorie"
+                    android:layout_marginLeft="130dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/orange"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_repas"
+                android:layout_width="554dp"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="@string/nos_repas"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_repas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"
+                />
+            <TextView
+                android:id="@+id/tv_boissons"
+                android:layout_width="554dp"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="@string/nos_boissons"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_boissons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_desserts"
+                android:layout_width="554dp"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="@string/nos_desserts"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_desserts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

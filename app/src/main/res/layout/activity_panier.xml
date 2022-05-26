@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/grisbgforpanier"
+    tools:context=".G_Panier.PanierActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_back"
+        android:src="@drawable/arrow__left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/img_back"
+        app:layout_constraintTop_toTopOf="@+id/img_back"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_back"
+        android:id="@+id/order"
+
+        android:text="Details Panier"
+        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/rv_panier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"
+
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_submit_valid_panier"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectange_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix Totale"
+            android:textSize="20dp"
+            android:id="@+id/tv_prix"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:id="@+id/TotalPrice"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/btnvcommande"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/white_recatnge_panier"
+            android:layout_below="@+id/TotalPrice"
+            android:text="Valider Panier"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

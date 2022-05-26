@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".PromotionP.addPromotion">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_back"
+        android:src="@drawable/arrow__left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/rl_app_icon"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_back"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:shapeAppearanceOverlay="@style/circular"
+            android:src="@drawable/fastifoodremove" />
+    </RelativeLayout>
+    <EditText
+
+        android:id="@+id/edt_prix_promo"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="Entrer le prix"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/rl_app_icon"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_submit_promo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectange_gradient"
+        app:layout_constraintTop_toBottomOf="@id/edt_prix_promo"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_chImage"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

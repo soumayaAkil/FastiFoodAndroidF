@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="Widget.Theme.Testing.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="input_style" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/rectangle_orange_transparence</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+    <style name="card_style" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/recatngle_grand_card</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+
+    </style>
+    <style name="card_style_for_panier" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/rectangle_grand_card_forpanier</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+
+    </style>
+    <style name="r" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">@drawable/radius</item>
+    </style>
+</resources>

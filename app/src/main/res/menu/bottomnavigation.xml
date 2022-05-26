@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Acceuil"
+        android:icon="@drawable/ic_restaurant_24"
+        android:title="Acceuil"/>
+    <item
+        android:id="@+id/Promo"
+        android:src="@drawable/etoile"
+        android:title="Commande"/>
+    <item
+        android:id="@+id/Commande"
+        android:icon="@drawable/ic_commande_24"
+        android:title="Commande"/>
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/ic_person_24"
+        android:title="Profile"/>
+
+
+</menu>

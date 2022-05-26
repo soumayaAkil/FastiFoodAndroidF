@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <RelativeLayout
+
+        android:id="@+id/rl_card_comR"
+        style="@style/card_style"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageRest"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/baguette"
+
+            />
+
+        <TextView
+            android:id="@+id/recl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rep"
+            android:layout_alignParentRight="true"
+            android:textSize="17sp"
+            android:textColor="@color/orange"
+            android:layout_marginTop="-45dp"
+            android:text="Reclamé"
+/>
+
+
+        <TextView
+            android:id="@+id/somme_Dfact"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageRest"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="40dt"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/nomRest"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+
+            />
+        <TextView
+            android:id="@+id/nomRest"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baguette Baguette"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:layout_toRightOf="@+id/imageRest"/>
+
+
+
+        <TextView
+            android:id="@+id/rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="en attent" />
+
+        <ImageView
+            android:id="@+id/annD"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/rep"
+
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@drawable/annuler"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

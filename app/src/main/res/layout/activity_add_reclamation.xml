@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reclamation.AddReclamation">
+
+    <TextView
+        android:id="@+id/TRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="644dp"
+        android:text="Type Reclamation"
+        android:textColor="#E46604"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:id="@+id/choiceTR"
+        android:layout_marginTop="45dp"
+        app:layout_constraintLeft_toLeftOf="@id/TRec"
+        app:layout_constraintTop_toBottomOf="@+id/TRec"
+        tools:ignore="MissingConstraints">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Arcl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="436dp"
+        android:text="Autre"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TRec" />
+
+    <Button
+        android:id="@+id/sendreclm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="315dp"
+        android:backgroundTint="#FF9800"
+        android:text="Envoyer"
+        android:textColor="#F8F6F6"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TRec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

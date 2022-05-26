@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:padding="20dp"
+    tools:context=".PromotionP.PromotionFragment">
+
+    <RelativeLayout
+        android:id="@+id/mgbg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rectangle_top"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promotion"
+            android:id="@+id/promo"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridViewListPromoClient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="250dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

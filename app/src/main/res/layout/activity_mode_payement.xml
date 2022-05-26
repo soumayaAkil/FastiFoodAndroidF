@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".G_Panier.ModePayement">
+    <TextView
+        android:id="@+id/txtvML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode de payement"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="178dp"
+        tools:ignore="MissingConstraints">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/RBAdomicilep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="À domicile"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <RadioButton
+        android:id="@+id/RBParCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Par carte"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="198dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="Continuer"
+
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

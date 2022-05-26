@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".G_Panier.FUcommande">
+
+    <EditText
+        android:id="@+id/editTextRegion"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:text="Votre Region"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="388dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvNP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Nom et prenom: "
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="37dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:text="Aridhi Intidhar"
+        android:textColor="@color/gray"
+        android:id="@+id/editTextNP"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="69dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDH"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:text="Date et Heure"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="491dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextNT"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:text="20505856"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="168dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextadresse"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:text="Votre adresse"
+        android:textColor="@color/gray"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="275dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse:"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="236dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region:"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="356dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date et heure:"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="452dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Numero de  Telephone:"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="131dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="590dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

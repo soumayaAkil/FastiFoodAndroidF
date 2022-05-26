@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:padding="20dp"
+    tools:context=".Profile.ProfileFragment">
+    <RelativeLayout
+        android:id="@+id/mgbg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rectangle_top"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:id="@+id/profil"
+          android:layout_marginStart="120dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp"
+
+            android:layout_below="@id/profil"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rest"
+
+                android:id="@+id/imageCatItem"
+
+                android:contentDescription="my_pic"
+                app:strokeColor="@color/teal_200"
+
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/card"
+    android:id="@+id/nom"
+    android:layout_centerInParent="true"
+    android:text="Ahmed Trabelssi"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:id="@+id/emailR"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <RelativeLayout
+            android:id="@+id/rl_submit_command"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/rl_app_choice"
+            >
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="50px"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+
+                android:id="@+id/email"
+                android:text="AhmedTrabelssi@gmail.com"/>
+            <View
+                android:layout_below="@id/email"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adrR"
+            android:layout_below="@id/emailR"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="140dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/rl_app_choice"
+            >
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="50px"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/adr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+
+                android:id="@+id/adresse"
+                android:text="7 rue kahra cité nassim Beja"/>
+            <View
+                android:layout_below="@id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/num"
+            android:layout_below="@id/adrR"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/rl_app_choice"
+            >
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="50px"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tele"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de télephone"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+
+                android:id="@+id/mobile"
+                android:text="51425425"/>
+            <View
+                android:layout_below="@id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
