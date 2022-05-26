@@ -52,6 +52,7 @@ import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
+
 public class UploadImageActivity extends AppCompatActivity implements View.OnClickListener  {
 
     ApiService apiService;

@@ -61,18 +61,20 @@ public class menuByCatRestau extends ArrayAdapter {
             @Override
             public void onClick(View v) {
                 final Dialog dialog = new Dialog(v.getContext());
+
                 dialog.setContentView(R.layout.alert_supprimer);
-                Button dialogButton = (Button) dialog.findViewById(R.id.cancel2);
-                Button dialogButtonA = (Button) dialog.findViewById(R.id.confirm2);
+                System.out.println("cccccccccccccccccccccccccccccccccccccccc");
+                Button dialogButton = (Button) dialog.findViewById(R.id.cancelM);
+                Button dialogButtonA = (Button) dialog.findViewById(R.id.confirmM);
 
                 // if button is clicked, close the custom dialog
                 dialogButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                      /*  dialog.dismiss();
+                       dialog.dismiss();
                         Toast.makeText(getContext(),"Cancel..!!",Toast.LENGTH_LONG).show();
 
-                       */
+
                     }
                 });
                 // if button is clicked, close the custom dialog
@@ -81,13 +83,13 @@ public class menuByCatRestau extends ArrayAdapter {
                 dialogButtonA.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-/*
+
                         Toast.makeText(getContext(),"Commande annulé ", Toast.LENGTH_LONG).show();
                         dialog.dismiss();
                         Intent intent =new Intent(getContext(), ListCategorieCRestauActivity.class);
 
                         getContext().startActivity(intent);
-                        */
+
 
 
                     }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:padding="10dp"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:padding="10dp"
     xmlns:tools="http://schemas.android.com/tools">
     <TextView
         android:id="@+id/textViewTitre"
@@ -24,7 +26,7 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/confirm2"
+        android:id="@+id/confirmM"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="220dp"
@@ -35,7 +37,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/cancel2"
+        android:id="@+id/cancelM"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
