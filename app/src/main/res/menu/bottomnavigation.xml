@@ -7,7 +7,7 @@
         android:title="Acceuil"/>
     <item
         android:id="@+id/Promo"
-        android:src="@drawable/etoile"
+        android:src="@drawable/ic_stars"
         android:title="Commande"/>
     <item
         android:id="@+id/Commande"
