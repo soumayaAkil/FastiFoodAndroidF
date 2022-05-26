@@ -9,7 +9,7 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Api.Api_Client.ApiClientMS;
 import com.example.testing.Api.Api_GProduit.ApiProduit;
 import com.example.testing.CategorieRestau.Adapter.menuByCatRestau;
 import com.example.testing.G_Panier.PanierActivity;
@@ -60,7 +60,7 @@ public class listMenuRestauByCat extends AppCompatActivity {
 
         // recuperation des categorie
 
-        ApiProduit api= ApiClient.getClient().create(ApiProduit.class);
+        ApiProduit api= ApiClientMS.getClient().create(ApiProduit.class);
         System.out.println("jjjjjjjjjjjj");
         Call<List<Produit>> list = api.getProdByIdCat(id_cat);
 

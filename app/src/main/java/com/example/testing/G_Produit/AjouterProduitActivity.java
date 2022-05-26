@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Api.Api_Client.ApiClientMS;
 import com.example.testing.Api.Api_GProduit.ApiProduit;
 import com.example.testing.Api.Api_GProduit.ApiUnite;
 import com.example.testing.Models.Unite;
@@ -136,7 +137,7 @@ public class AjouterProduitActivity extends AppCompatActivity {
                 prixProduit= edt_prixProd.getText().toString();
                 prixProd = Float.parseFloat(prixProduit);
 
-                ApiProduit api = ApiClient.getClient().create(ApiProduit.class);
+                ApiProduit api = ApiClientMS.getClient().create(ApiProduit.class);
                 Call<String> postProd = (Call<String>) api.postProduit(nomProd,id_restau,id_cat,prixProd,id_unite);
 
                 postProd.enqueue(new Callback<String>() {

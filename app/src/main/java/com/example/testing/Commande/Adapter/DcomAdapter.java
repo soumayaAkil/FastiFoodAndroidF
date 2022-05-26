@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
+import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
 public class DcomAdapter extends RecyclerView.Adapter<DcomAdapter.DcomViewHolder>{
     List<Dcommande> listDc;
@@ -45,7 +45,7 @@ public class DcomAdapter extends RecyclerView.Adapter<DcomAdapter.DcomViewHolder
         holder.quantite.setText(String.valueOf(DC.getQuantite()));
         holder.nomProd.setText(DC.getProduit());
 
-        Picasso.get().load(BASE_URL_IMAGE+"uploads/"+DC.image_produit).into(holder.imageProd);
+        Picasso.get().load(BASE_URL_IMAGE_MS+"uploads/"+DC.image_produit).into(holder.imageProd);
         holder.prix.setText(Double.toString(DC.getPrix()));
         holder.nomUnite.setText(DC.getUnite());
         Dcommande detcom = listDc.get(position);

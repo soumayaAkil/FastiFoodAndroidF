@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Api.Api_Client.ApiClientMS;
 import com.example.testing.Api.Api_GProduit.ApiHandler;
 import com.example.testing.CategorieRestau.ListCategorieCRestauActivity;
 import com.example.testing.G_Produit.Adapter.ProduitAdapter;
@@ -105,7 +105,7 @@ public class AcceuilFragment extends Fragment {
 
         //menu
 
-        ApiHandler api= ApiClient.getClient().create(ApiHandler.class);
+        ApiHandler api= ApiClientMS.getClient().create(ApiHandler.class);
         //Repas
         Call<List<Produit>> listRepas=api.getAllRepas();
         listRepas.enqueue(new Callback<List<Produit>>() {

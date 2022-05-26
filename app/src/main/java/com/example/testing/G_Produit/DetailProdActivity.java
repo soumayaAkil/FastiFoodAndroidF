@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Api.Api_Client.ApiClientMS;
 import com.example.testing.Api.Api_GProduit.ApiHandler;
 import com.example.testing.Api.Api_GProduit.ApiProduit;
 import com.example.testing.Api.Api_GProduit.ApiUnite;
@@ -33,7 +34,7 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
-import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
+import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
 public class DetailProdActivity extends AppCompatActivity {
 
@@ -113,7 +114,7 @@ public class DetailProdActivity extends AppCompatActivity {
         // image
 
         ShapeableImageView imageView=(ShapeableImageView) findViewById(R.id.imgDetailProd);
-        ApiHandler api=ApiClient.getClient().create(ApiHandler.class);
+        ApiHandler api=ApiClientMS.getClient().create(ApiHandler.class);
         Call<String> pic = api.getPicture(id_prod);
 
         pic.enqueue(new Callback<String>() {
@@ -122,7 +123,7 @@ public class DetailProdActivity extends AppCompatActivity {
                 String picture=response.body();
                 imageProd=picture;
                
-                Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
+                Picasso.get().load(BASE_URL_IMAGE_MS+"uploads/"+picture).into(imageView);
             }
 
             @Override
@@ -136,7 +137,7 @@ public class DetailProdActivity extends AppCompatActivity {
         // recupére nom
 
         TextView tv_nomprod=(TextView) findViewById(R.id.tv_nomProd);
-        ApiProduit apiProd=ApiClient.getClient().create(ApiProduit.class);
+        ApiProduit apiProd=ApiClientMS.getClient().create(ApiProduit.class);
         Call<Root> nomProds = apiProd.getProdByIdProd(id_prod);
         nomProds.enqueue(new Callback<Root>() {
             @Override
@@ -161,7 +162,7 @@ public class DetailProdActivity extends AppCompatActivity {
                 id_unite=radioButton.getId();
 
                 System.out.println("iddd"+id_unite);
-                ApiProduit apiPro=ApiClient.getClient().create(ApiProduit.class);
+                ApiProduit apiPro=ApiClientMS.getClient().create(ApiProduit.class);
                 Call<String> prixProd = apiPro.getPriceProd(id_prod,id_unite);
                 prixProd.enqueue(new Callback<String>() {
                     @Override

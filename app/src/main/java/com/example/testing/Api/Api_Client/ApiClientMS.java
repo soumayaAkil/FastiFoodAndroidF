@@ -1,16 +1,12 @@
 package com.example.testing.Api.Api_Client;
 
-import android.util.Log;
-
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 
-public class ApiClient {
+public class ApiClientMS {
 
-
-
-    private static final String BASE_URL="http://172.16.13.97:5000/";
- //   private static final String BASE_URL="http://172.16.13.46:5000/";
+    //private static final String BASE_URL="http://172.16.13.38:5050/";
+    private static final String BASE_URL="http://172.16.13.46:5050/";
 
 
 
@@ -27,4 +23,5 @@ public class ApiClient {
         }
         return retrofit;
     }
+
 }
