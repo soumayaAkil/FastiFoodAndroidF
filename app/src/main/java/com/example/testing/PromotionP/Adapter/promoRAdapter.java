@@ -26,10 +26,11 @@ import retrofit.Retrofit;
 
 import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
 
-public class promoAdapter extends ArrayAdapter {
+
+public class promoRAdapter extends ArrayAdapter {
     List<Promotion> PromoList= new ArrayList<>();
     Context context;
-    public promoAdapter(@NonNull Context context, int resource, @NonNull List objects) {
+    public promoRAdapter(@NonNull Context context, int resource, @NonNull List objects) {
         super(context, resource, objects);
         PromoList= objects;
         context=context;
@@ -74,7 +75,7 @@ public class promoAdapter extends ArrayAdapter {
                 System.out.println(PromoList.get(position).getPrix_promo());
                 System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
                 Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
-       
+
             }
 
             @Override
@@ -87,4 +88,5 @@ public class promoAdapter extends ArrayAdapter {
 
     }
 }
+
 

@@ -32,7 +32,7 @@ public class MenuClientActivity extends AppCompatActivity {
                     unFragment= new AcceuilClientFragment();
                     break;
                 case R.id.Promo:
-                    unFragment= new AcceuilClientFragment();
+                    unFragment= new PromotionFragment();
                             //PromotionFragment();
                     break;
                 case R.id.Commande:
