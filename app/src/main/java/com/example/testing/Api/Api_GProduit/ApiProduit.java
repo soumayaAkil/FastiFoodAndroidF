@@ -31,7 +31,7 @@ public interface ApiProduit {
     @GET("produit/GetProdByIdProd/:id_prod")
     Call<Root> getProdByIdProd(@Query("id_prod") int id_prod);
 
-    @GET("detailProduit/GetPriceProd/:id_prod/:id_unite")
+    @GET("produit/GetPriceProd/:id_prod/:id_unite")
     Call<String> getPriceProd(@Query("id_prod") int id_prod,
                               @Query("id_unite") int id_unite);
 

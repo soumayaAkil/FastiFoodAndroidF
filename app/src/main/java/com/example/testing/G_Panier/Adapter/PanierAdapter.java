@@ -21,7 +21,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
+import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
 public class PanierAdapter extends RecyclerView.Adapter<PanierAdapter.PanierViewHolder>{
     List<Cart> listPanier;
@@ -119,7 +119,7 @@ public class PanierAdapter extends RecyclerView.Adapter<PanierAdapter.PanierView
 
 
         // holder.quantite.setText((panier.getQuantite());
-        Picasso.get().load(BASE_URL_IMAGE+"uploads/"+panier.getImageProd()).into(holder.imageProd);
+        Picasso.get().load(BASE_URL_IMAGE_MS+"uploads/"+panier.getImageProd()).into(holder.imageProd);
 
 
     }

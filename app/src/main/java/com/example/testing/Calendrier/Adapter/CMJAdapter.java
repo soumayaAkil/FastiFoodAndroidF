@@ -18,7 +18,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
+import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
 public class CMJAdapter extends RecyclerView.Adapter<CMJAdapter.cmjrViewHolder> {
     List<commande> listcj;
@@ -42,7 +42,7 @@ public class CMJAdapter extends RecyclerView.Adapter<CMJAdapter.cmjrViewHolder> 
 
         commande DF = listcj.get(position);
         holder.heure.setText(DF.getHeure());
-        Picasso.get().load(BASE_URL_IMAGE+"uploads/"+DF.image_produit).into(holder.imageproduit);
+        Picasso.get().load(BASE_URL_IMAGE_MS+"uploads/"+DF.image_produit).into(holder.imageproduit);
         holder.prix.setText(String.valueOf(DF.getPrix()));
         holder.nomUnite.setText(DF.getUnite());
         holder.quantite.setText(String.valueOf(DF.getQuantite()));

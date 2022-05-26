@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.example.testing.Api.Api_Client.ApiClient;
+import com.example.testing.Api.Api_Client.ApiClientMS;
 import com.example.testing.Api.Api_GProduit.ApiProduit;
 import com.example.testing.G_Panier.PanierActivity;
 import com.example.testing.G_Produit.Adapter.MenuByCatAdapter;
@@ -42,7 +42,7 @@ public class ListMenuByIdCatActivity extends AppCompatActivity {
 
         Intent intent=getIntent();
         if(intent.hasExtra("id_cat"))
-        {
+        { 
             id_cat=intent.getIntExtra("id_cat",0);
         }
 
@@ -50,7 +50,7 @@ public class ListMenuByIdCatActivity extends AppCompatActivity {
 
         // recuperation des categorie
 
-        ApiProduit api= ApiClient.getClient().create(ApiProduit.class);
+        ApiProduit api= ApiClientMS.getClient().create(ApiProduit.class);
         Call<List<Produit>> list = api.getProdByIdCat(id_cat);
         list.enqueue(new Callback<List<Produit>>() {
             @Override

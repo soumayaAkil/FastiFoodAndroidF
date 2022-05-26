@@ -50,7 +50,7 @@ import retrofit2.Retrofit;
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
-import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE;
+import static com.example.testing.Profile.MainActivity.BASE_URL_IMAGE_MS;
 
 public class UploadImageActivity extends AppCompatActivity implements View.OnClickListener  {
 
@@ -102,7 +102,7 @@ public class UploadImageActivity extends AppCompatActivity implements View.OnCli
         OkHttpClient client = new OkHttpClient.Builder().build();
 
 
-        apiService = new Retrofit.Builder().baseUrl(BASE_URL_IMAGE).client(client).build().create(ApiService.class);
+        apiService = new Retrofit.Builder().baseUrl(BASE_URL_IMAGE_MS).client(client).build().create(ApiService.class);
 
     }
 
