@@ -17,6 +17,7 @@ import com.example.testing.Api.Api_PromotionP.APIPromo;
 import com.example.testing.Models.Categorie;
 import com.example.testing.Models.Promotion;
 import com.example.testing.PromotionP.Adapter.promoAdapter;
+import com.example.testing.PromotionP.Adapter.promoRAdapter;
 import com.example.testing.R;
 
 import java.util.ArrayList;
@@ -118,7 +119,7 @@ public class PromotionRestauFragment extends Fragment {
                     List<Promotion> PrmoList=new ArrayList<Promotion>();
                     PrmoList=response.body();
                     System.out.println("listtt "+PrmoList);
-                    promoAdapter promoAdap=new promoAdapter(getContext(),R.layout.promogriditem,PrmoList);
+                    promoRAdapter promoAdap=new promoRAdapter(getContext(),R.layout.promogriditemrest,PrmoList);
                     simpleList.setAdapter(promoAdap);
                 }
             }
