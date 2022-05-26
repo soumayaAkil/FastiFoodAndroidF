@@ -118,7 +118,7 @@ public class PromotionRestauFragment extends Fragment {
                 {
                     List<Promotion> PrmoList=new ArrayList<Promotion>();
                     PrmoList=response.body();
-                    System.out.println("listtt "+PrmoList);
+                    System.out.println("listttttttttt "+PrmoList);
                     promoRAdapter promoAdap=new promoRAdapter(getContext(),R.layout.promogriditemrest,PrmoList);
                     simpleList.setAdapter(promoAdap);
                 }

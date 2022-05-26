@@ -51,8 +51,8 @@ public class CatMenuAdapter extends ArrayAdapter {
         View v = convertView;
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         v = inflater.inflate(R.layout.catmenugriditem, null);
-        TextView textView = (TextView) v.findViewById(R.id.titreCatItem);
-        ImageView imageView = (ImageView) v.findViewById(R.id.imageCatItem);
+        TextView textView = (TextView) v.findViewById(R.id.titreCatIt);
+        ImageView imageViewCat = (ImageView) v.findViewById(R.id.imageCatIt);
         textView.setText(CatList.get(position).getNomCat());
 
         v.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +73,7 @@ public class CatMenuAdapter extends ArrayAdapter {
             public void onResponse(Response<String> response, Retrofit retrofit) {
                 String picture=response.body();
 
-                Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageView);
+                Picasso.get().load(BASE_URL_IMAGE+"uploads/"+picture).into(imageViewCat);
              
             }
 

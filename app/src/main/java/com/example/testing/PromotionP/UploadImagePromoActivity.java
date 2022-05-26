@@ -28,6 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.testing.Api.Api_Uimage.ApiService;
 import com.example.testing.G_Produit.CategorieActivity;
 import com.example.testing.R;
+import com.example.testing.Splash.RestauClientActivity;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -315,7 +316,7 @@ public class UploadImagePromoActivity extends AppCompatActivity implements View.
                     }
 
                     Toast.makeText(getApplicationContext(),  " Image ajoutée !!", Toast.LENGTH_SHORT).show();
-                    Intent i=new Intent(getApplicationContext(), PromotionRestauFragment.class);
+                    Intent i=new Intent(getApplicationContext(), RestauClientActivity.class);
                     //retour
                     startActivity(i);
                 }

@@ -30,6 +30,8 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
+import static com.example.testing.Profile.MainActivity.ID_RESTAU;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link CommandeClientFragment#newInstance} factory method to
@@ -119,7 +121,7 @@ public class CommandeClientFragment extends Fragment {
 
 
         ApiComR api = ApiClient.getClient().create(ApiComR.class);
-        Call<List<commandeRestau>> listComByRes = api.getFactByIdRestau(2);
+        Call<List<commandeRestau>> listComByRes = api.getFactByIdRestau(ID_RESTAU);
         System.out.println(listComByRes);
         listComByRes.enqueue(new Callback<List<commandeRestau>>() {
             @Override

@@ -10,7 +10,7 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageCatItem"
+            android:id="@+id/imageCatIt"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="5dp"
@@ -20,7 +20,7 @@
             />
 
         <TextView
-            android:id="@+id/titreCatItem"
+            android:id="@+id/titreCatIt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50px"
